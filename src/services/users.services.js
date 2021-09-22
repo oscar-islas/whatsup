@@ -34,7 +34,10 @@ class UserService {
   static async update(updatedUser, id) {
     try {
       let result = await users.update(updatedUser, {where: {id}});
-      return result;
+      if(result[0] === 0){
+        return false;
+      }
+      return true; // --> [0] ó [1]
     } catch (error) {
       throw error;
     }
