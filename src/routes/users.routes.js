@@ -14,4 +14,7 @@ router.put("/users/:id", updateUser);
 //DELETE -> Borrar un registro
 router.delete("/users/:id", deleteUser);
 
+//Completar la siguiente ruta
+router.get("/users/:id/conversations");
+
 module.exports = router;

@@ -19,6 +19,9 @@ router.get("/conversations/:id/users", conversationCtrl.conversationUsers);
 
 router.get("/conversations/:id/participants", conversationCtrl.conversationParticipants);
 
+//Completar la siguiente ruta
+router.delete("/conversations/:id/participants");
+
 router.get("/conversations/:id/messages", conversationCtrl.conversationMessages);
 
 module.exports = router;
