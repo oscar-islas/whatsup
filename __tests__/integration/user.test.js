@@ -35,25 +35,3 @@ describe("Pruebas sobre rutas de usuarios", () => {
     expect(response.body).toContainEqual(expect.objectContaining({...userCreated}));
   });
 });
-
-//1. BeforeAll -> Crear un usuario
-
-//2. AfterAll -> Borrar todos los usuarios
-
-//3. Debería de obtener un objeto de usuario
-
-//4. Debería de obtener un status 201 y un objeto de usuario
-
-//5. Debería de obtener un status 200 al actualizar un usuario
-
-//6. Debería de obtener un status 204 al borrar un usuario
-
-//Probar insertar un usuario con el mismo email
-//7. Debería de obtener un status 400 al insertar un usuario con el mismo email 
-
-//Probar insertar un usuario sin un nombre
-//8. Debería de obtener un status 400 al insertar un usuario con campos vacios
-
-//9. Debería de obtener un status 400 al tratar de actualizar un usuario que no existe
-
-//10. Debería de obtener todas las conversaciones de un usuario por su ID
